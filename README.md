@@ -1,5 +1,5 @@
 # Sqlite3-springboot-normal-crud project   
-**Functions:** 1.create 2.retrieve 3.update 4.delete. In addition: paging,sorting,filtering   
+**Functions:** 1.create 2.retrieve 3.update 4.delete. In addition: paging, sorting, filtering   
 **Database:** sqlite3   
 **Backend:** springboot, jpa+hibernate    
 **Frontend:** bootstrap+jquery+jqgrid   
