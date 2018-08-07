@@ -1,0 +1,38 @@
+BaseAddress : http://{ip}:{port}/transfer/
+
+Method 1:
+    address:              {BaseAddress}/transferAccount
+    description:          transfer user's account
+    METHOD:               POST
+    input-format:         json
+    input:                {'name':'#name' , 'transferAccountItemParamList':[{'account':'#account','amount':#amount},...]}
+    output-format:        string
+    output:               'success'
+
+
+Method 2:
+    address:              {BaseAddress}/allAccountData
+    description:          get all users' account data
+    METHOD:               GET/POST
+    input-format:         None
+    input:                None
+    output-format:        json
+    output:               [{'name':'#name','amount':#amount},...]
+
+Method 3:
+    address:             {BaseAddress}/allDBDataWithVersions
+    description:         get all data in db with versions
+    METHOD:              GET/POST
+    input-format:        None
+    input:               None
+    output-format:       json
+    output:              ['name':'#name','data':{'#family1':{'#column1':{#version1:'#value1',#version2:'value2',...},'#column2':{...},...},'#family2'{...},...]
+
+Method 4:
+    address:            {BaseAddress}:/recordData
+    description:        get all data in record table
+    METHOD:             GET/POST
+    input-format:       None
+    input:              None
+    output-format:      json
+    output:             {'upCount':#upCount,'downCount':#downCount}

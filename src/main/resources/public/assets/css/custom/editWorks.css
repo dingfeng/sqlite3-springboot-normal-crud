@@ -1,0 +1,14 @@
+.ace-file-multiple .ace-file-container {
+    height: 150px;
+}
+
+.ace-file-multiple .ace-file-container span.ace-file-name{
+    height: 100%;
+    text-align: center;
+}
+
+
+.ace-file-multiple .ace-file-container span.ace-file-name img {
+    height: 100%!important;
+    background-size: contain;
+}
